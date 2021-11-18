@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/all.min.js"></script>
+  <script src="css/js/app.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>weather app</title>
+</head>
+<body>
+  <div class="  is-fullheight ">
+    <p class="is-size-1 has-text-centered">
+      check weather in your city 
+    </p>
+    <form action="/weather" method="post">
+      <div class="field" id="location">
+        <p class="control has-icons-left has-icons-right">
+          <input class="input" type="location" placeholder="enter location" name="place">
+          <span class="icon is-small is-left">
+            <i class="fas fa-cloud-moon"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </p>
+      </div>
+      <div class="field has-text-centered" id="location">
+        <p class="control">
+          <button type="submit"  class=" login button is-success">
+            submit
+          </button>
+        </p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
